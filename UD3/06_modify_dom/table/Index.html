@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Table Ej 6</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='./main.js'></script>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    header {
+        text-align: center;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    nav {
+        flex-grow: 1;
+    }
+    .data {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 25px;
+    }
+    article h2 {
+        color: grey;
+        text-align: center;
+    }
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: end;
+    }
+</style>
+<body>
+    <header>
+        <h1>My blog</h1>
+        <h2>by me</h2>
+    </header>
+    <main>
+        <div class="data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>John</td>
+                        <td>Foo</td>
+                        <td><a href="http://localhost/edit/0">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="data">
+            <button onclick="onClick()">Add</button>
+        </div>
+    </main>
+</body>
+</html>
